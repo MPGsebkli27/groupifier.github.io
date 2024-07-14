@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unofficial Competition Grouping</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="competition-setup">
+            <h1>Setup Competition</h1>
+            <label for="competition-name">Competition Name:</label>
+            <input type="text" id="competition-name">
+            <label for="max-competitors">Max Competitors per Group:</label>
+            <input type="number" id="max-competitors">
+            <button onclick="setupCompetition()">Next</button>
+        </div>
+
+        <div id="event-selection" style="display: none;">
+            <h1>Select Events</h1>
+            <button onclick="selectAllEventCheckboxes()">Select All</button>
+            <button onclick="deselectAllEventCheckboxes()">Deselect All</button>
+            <div id="event-checkboxes"></div>
+            <button onclick="selectEvents()">Next</button>
+        </div>
+
+        <div id="competitor-setup" style="display: none;">
+            <h1>Add Competitors</h1>
+            <button onclick="selectAllEventCheckboxes()">Select All</button>
+            <button onclick="deselectAllEventCheckboxes()">Deselect All</button>
+            <div id="competitor-form"></div>
+            <button onclick="addCompetitor()">Add Competitor</button>
+            <div id="competitor-list"></div>
+            <button onclick="finalizeCompetitors()">Finalize Competitors</button>
+        </div>
+
+        <div id="grouping-results" style="display: none;">
+            <h1>Grouping Results</h1>
+            <div id="grouping-output"></div>
+        </div>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>

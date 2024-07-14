@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e1923;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+a,
+button {
+    display: block;
+    width: calc(100%);
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+
+a:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+≤ #competitor-form,
+#grouping-output,
+#competitor-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.inline-checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.competitor-item,
+.group,
+.event-group {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.event-group {
+    background-color: #f0f0f0;
+}
+
+.group h4 {
+    margin-top: 0;
+}
